@@ -1,48 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ accordion</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  FAQs
-
-  What is Frontend Mentor, and how will it help me?
-
-  Frontend Mentor offers realistic coding challenges to help developers improve their 
-  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
-  all levels and ideal for portfolio building.
-
-  Is Frontend Mentor free?
-
-  Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
-  option providing access to a range of projects suitable for all skill levels.
-
-  Can I use Frontend Mentor projects in my portfolio?
-
-  Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
-  way to showcase your skills to potential employers!
-
-  How can I get help if I'm stuck on a Frontend Mentor challenge?
-  
-  The best place to get help is inside Frontend Mentor's Discord community. There's a help 
-  channel where you can ask questions and seek support from other community members.
-
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @font-face {
+        font-family: WorkSans;
+        src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+      }
+      body {
+        font-family: "WorkSans";
+      }
+    </style>
+    <title>FAQ accordion</title>
+  </head>
+  <body>
+    <main>
+      <div
+        class="bg-[url(/assets/images/background-pattern-desktop.svg)] h-[35dvh]"
+      ></div>
+      <article
+        class="border border-gray-50 rounded-lg gap-5 p-8 flex flex-col max-w-[38vw] shadow-xl mt-3 relative w-fit mx-auto"
+      >
+        <div class="flex items-center gap-3">
+          <img src="assets/images/icon-star.svg" alt="" />
+          <h1 class="text-4xl font-bold">FAQs</h1>
+        </div>
+        <div>
+          <span class="flex items-center justify-between">
+            <h2 class="text-base font-semibold">
+              What is Frontend Mentor, and how will it help me?
+            </h2>
+            <img
+              class="cursor-pointer"
+              src="assets/images/icon-plus.svg"
+              alt="plus icon"
+            />
+          </span>
+          <p class="text-sm hidden">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </p>
+        </div>
+        <div>
+          <span class="flex items-center justify-between">
+            <h2 class="text-base font-semibold">Is Frontend Mentor free?</h2>
+            <img
+              class="cursor-pointer"
+              src="assets/images/icon-plus.svg"
+              alt="plus icon"
+            />
+          </span>
+          <p class="text-sm hidden">
+            Yes, Frontend Mentor offers both free and premium coding challenges,
+            with the free option providing access to a range of projects
+            suitable for all skill levels.
+          </p>
+        </div>
+        <div>
+          <span class="flex items-center justify-between">
+            <h2 class="text-base font-semibold">
+              Can I use Frontend Mentor projects in my portfolio?
+            </h2>
+            <img
+              class="cursor-pointer"
+              src="assets/images/icon-plus.svg"
+              alt="plus icon"
+            />
+          </span>
+          <p class="text-sm hidden">
+            Yes, you can use projects completed on Frontend Mentor in your
+            portfolio. It's an excellent way to showcase your skills to
+            potential employers!
+          </p>
+        </div>
+        <div>
+          <span class="flex items-center justify-between">
+            <h2 class="text-base font-semibold">
+              How can I get help if I'm stuck on a challenge?
+            </h2>
+            <img
+              class="cursor-pointer"
+              src="assets/images/icon-plus.svg"
+              alt="plus icon"
+            />
+          </span>
+          <p class="text-sm hidden">
+            The best place to get help is inside Frontend Mentor's Discord
+            community. There's a help channel where you can ask questions and
+            seek support from other community members.
+          </p>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>
